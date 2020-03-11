@@ -7,10 +7,11 @@
   <title>Marley Resume</title>
   <link rel="stylesheet" href="css/mystyle.css">
   <link href="https://fonts.googleapis.com/css?family=Covered+By+Your+Grace&display=swap" rel="stylesheet">
-
+  <link href="_css/base.css" rel="stylesheet" type="text/css" media="screen">
 </head>
 
 <body>
+  
   <main>
     <!-- ***********************  ABOUT / PROFILE  *********************** -->
     <header>
@@ -55,11 +56,14 @@
 
 
         <!-- Copy this whole <section> block to add more jobs. -->
-        <section>
+        <section class="job-item">
+          <div class="job-details">
           <h3>Graphic Design Intern</h3>
           <p>CORRAL Riding Academy</p>
           <p>January-Current</p>
-          <p>Job summary goes here. Add as many paragraphs as you need.</p>
+        </div>
+          <div class="job-summary">
+          <p>Provides delivarables from a large range of graphic design skill. Including Photo editing, print design, typography, and graphics for advertising. </p>
           <p>Achievements:</p>
           <ul>
             <li>Creating Graphics for Sale at Events.</li>
@@ -78,19 +82,88 @@
         <h2>Education</h2>
 
         <!-- Copy this whole <section> block to add more schools. -->
-        <section>
+          <section class="job-item">
+            <div class="job-details">
           <h3>Wake Technical Community College - Raleigh, NC</h3>
           <p>AAS in Advertising and Graphic Design, Spring 2020</p>
+          </div>
+          <div class="job-summary"
           <p>Certificates:</p>
           <ul>
             <li>Advanced Graphic Design.</li>
             <li> Web & Graphic Design.</li>
             <li>Design Portfolio.</li>
             <li>Graphic Design.</li>
-            <li>Design Basics .</li>
+            <li>Design Basics.</li>
         </section>
       </div>
       <!-- End of School block. -->
+    </section>
+
+
+
+<div class="forms">
+      <h2>Contact Me</h2>
+	<p>Leave me a message down below and I will get back to you soon.</p>
+
+	<article class="example">
+	<form class="register-form">
+	<h3>Personal Info</h3>
+	<ul class="form-fields">
+	  <li><label for="name">Name:</label> <input type="name" name="name" id="name" placeholder="First Name" class="text-input"></li>
+	  <li><label for="last-name">Last Name:</label> <input type="last" name="last-name" id="last-name" placeholder="Last Name" class="text-input"></li>
+	  
+	  </select>	</li>
+	  <li><label for="phone-number">Phone Number:</label> <input type="number" name="phone-number" id="phone-number" placeholder="Phone Number" class="text-input"></li>
+	  <li><label for="email">Email:</label> <input type="email" name="email" id="email" placeholder="Email" class="text-input"></li>
+	</ul>
+
+
+
+
+
+
+
+
+
+</section>
+<section class="form-group">
+	<h3>Services</h3>
+	<p>Which service(s) do you need?</p>
+
+<ul class="form-services">
+	<li><input type="checkbox" id="print" value="print"> <label for="print"></label>Print Design</label></li>
+	<li><input type="checkbox" id="Branding" value="Branding"> <label for="Branding">Branding</label></li>
+	<li><input type="checkbox" id="Logo" value="Logo"> <label for="Logo">Logo</label></li>
+	<li><input type="checkbox" id="Photoshop" value="Photoshop"> <label for="Photoshop">Photoshop</label></li>
+	<li><input type="checkbox" id="Advertising" value="Advertising"> <label for="Advertising">Advertising</label></li>
+	<li><input type="checkbox" id="Web" value="Web"> <label for="Web">Web Design</label></li>
+	<li><input type="checkbox" id="Other" value="Other"> <label for="Other">Other</label></li>
+  
+  </ul>
+
+
+<h4>Message</h4>
+<p>Leave any questions or comments below.</p>
+<ul class="form-food">
+	<ul class="form-fields">
+		<li><label for="food-options"></label> <input type="subject" name="subject" id="food-options" placeholder="subject" class="text-input"></li>
+
+<li><label for="food-options"></label><textarea id="food-options" name="food-options" class="text-area">Leave your message here</textarea> </li>
+</ul>
+
+
+
+<section class="form-submit"></section>
+<button type="submit" class="register-btn">Submit</button>
+</section></div>
+</form>
+</article>
+
+
+
+
+
     </section>
 
     <!-- *****************  CONTACT INFO / SOCIAL MEDIA  ***************** -->
@@ -105,11 +178,17 @@
           <li><a href="https://twitter.com/MarleyDWilson" target="_blank">Twitter</a></li>
           <li><a href="https://www.linkedin.com/in/marley-wilson-533679159/" target="_blank">LinkedIn</a></li>
 
+
         </ul>
+        
       </div>
+
+
 
     </footer>
   </main>
+  
 </body>
+
 
 </html>

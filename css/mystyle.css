@@ -19,7 +19,7 @@ img{
     h1{ 
     font-family: 'Covered By Your Grace', cursive;
     font-size: 60px;
-margin: 0em;
+    margin: 0em;
    padding: 0 ;
     letter-spacing: 10px;
     text-shadow: 2px 2px 10px rgb(255, 150, 241);
@@ -35,19 +35,35 @@ h2{
 header { 
     background-color: #703b54;
     color:#F7FFF7;
-    padding: 10px 50px;
+    padding: 20px;
     border-style: dotted;
     border-width: 10px;
     border-color: white;
     margin: 1px;
 
 }
-.education{ background: white;}
+.education{ background: white;
+  padding: 20px;}
 .projects {
     background: rgb(255, 255, 255);
-    padding-bottom: 100px ;
+    padding-bottom: 100px;
+    padding-top: 20px;
 }
-.work-experience { background: #A1C6D7;}
+.work-experience { background: #A1C6D7;
+padding: 20px;}
+
+
+.job-item {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  column-gap: 20px;
+}
+
+
+
+
+
+
 footer{
     background: #b4707b;
     color:#F7FFF7;
@@ -74,3 +90,97 @@ a {
     cursor: pointer; 
     display: inline-block;
 }
+
+.forms {
+    margin: 0;
+    padding: 5px 300px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    line-height:1.5;
+    background-color: #ffe2f2;
+}
+
+.register-form {
+    line-height: 1.4;
+  }
+  .form-group {
+    background: rgb(247, 186, 216);
+    margin-bottom: 1em;
+    padding: 10px;
+  }
+  .form-group ul {
+    list-style: none;
+    margin: 0 0 2em;
+    padding: 0;
+  }
+  .form-group li {
+    margin-bottom: 0.5em;
+  }
+  .form-group h3 {
+    margin-bottom: 1em;
+  }
+  .form-fields input[type="name"],
+  .form-fields input[type="last"],
+  .form-fields input[type="number"],
+  .form-fields input[type="email"],
+  .form-fields input[type="subject"]
+  .form-fields select {
+    box-sizing: border-box;
+    padding: 0.6em 0.8em;
+    color: #999;
+    background: #ffffff;
+    border: 1px solid #adadad;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 0.9em;
+    text-decoration: none;
+    line-height: normal;
+    max-height: 3em;
+  }
+  
+  .form-food textarea {
+      display: block;
+      box-sizing: border-box;
+      font: 0.9em Lato, Helvetica, sans-serif;
+      width: 90%;
+      height: 6em;
+      overflow: auto;
+      padding: 0.6em 0.8em;
+      color: #999;
+      background: #f7f7f7;
+      border: 1px solid #e1e1e1;
+      line-height: normal;
+  }
+  
+  .form-group {
+    flex: 1 0 300px;
+    margin-right: 2em;
+  }
+  .form-submit {
+    flex: 0 0 100%;
+  }
+  .form-fields li {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .form-fields input[type="name"],
+  .form-fields input[type="last"],
+  .form-fields input[type="number"],
+  .form-fields input[type="email"],
+  
+  .form-fields select {
+    flex: 1 0 230px;
+  }
+  .form-fields label {
+    flex: 1 0 90px;
+    max-width: 200px;
+  }
+  .form-services{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .form-services li {
+    width: 145px;
+  }
